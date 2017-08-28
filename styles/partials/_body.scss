@@ -1,0 +1,1209 @@
+
+// Why do we use it?
+
+.UseItIcons{
+	background:  #f8f8f8;
+}
+
+.why{
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 45%;
+	margin: 0 auto;
+	h3 {
+		text-align: center;
+		padding-top: 60px;
+		padding-bottom: 15px;
+	}
+	p {
+		text-align: center;
+		color: $textLtGrey;
+		@include fontSize(14px, 26px);
+		font-weight: 400;
+		padding-bottom: 60px;
+	}
+}
+
+
+.whyIcons{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	p{
+		color: $textDkGrey;
+		@include fontSize(14px, 24px);
+		text-transform: uppercase;
+		padding-bottom: 22px;
+	}
+}
+
+.iconStart{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	opacity: 0.5;
+}
+
+.iconStart:hover{
+	opacity: 1;
+}
+
+// Pseudo element code accredited to joseramonc via GitHub - https://gist.github.com/joseramonc/1e4d3da4246f9dd7fd89
+
+.iconStart:hover::after {
+    left: 20%;
+    top: 0px;
+    position: relative;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid #23B7EF;
+    border-left: 15px solid transparent;
+    content: '';
+}
+
+
+.currentIcon{
+	font-size: 10px;
+	line-height: 10px;
+	position: relative;
+	bottom: 5px;
+}
+// ENDS
+
+
+// LAPTOP - FEATURES SECTION
+
+.laptopFeatures{
+	background: -webkit-linear-gradient(91deg, #8c82ff 8%, #2bb9ff 92%);
+	background: -moz-linear-gradient(91deg, #8c82ff 8%, #2bb9ff 92%);
+	background: -o-linear-gradient(91deg, #8c82ff 8%, #2bb9ff 92%);
+	background: -ms-linear-gradient(91deg, #8c82ff 8%, #2bb9ff 92%);
+	background: linear-gradient(-1deg, #8c82ff 8%, #2bb9ff 92%);
+	position: relative;
+	h2{
+		padding-top: 125px;
+		color:  #ffffff;
+		font-size: 40px;
+		font-weight: 600;
+		line-height: 55px;
+		text-align: left;
+	}
+	p{
+		color:  #ffffff;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 25px;
+		text-align: left;
+		padding-bottom: 35px;
+	}
+}
+
+.features{
+	display: flex;
+}
+
+.lapRight img{
+	position: absolute;
+	right: 0;
+	top: 50px;
+}
+
+.Lefttext{
+	width: 40%;
+	button{
+		margin-bottom: 135px;
+		color:  #ffffff;
+		@include fontSize(13px, 30px);
+		font-weight: 300;
+		text-align: center;
+		transform: scaleX(1.0001);
+		padding-left: 30px;
+		padding-right:30px;
+		text-transform: uppercase;
+		background: linear-gradient(-1deg, #8c82ff 48%, #2bb9ff 137%);
+
+	}
+}
+
+
+
+// ENDS
+
+// Pricing - Where can I get some? BEGINS
+.priceTitle{
+	margin: 0 auto;
+	width: 50%;
+	h3{
+		text-align: center;
+		padding-top: 60px;
+		padding-bottom: 15px;
+	}
+	p{
+		text-align: center;
+		padding-bottom: 15px;
+		color: $textLtGrey;
+		@include fontSize(14px, 25px);
+		font-weight: 400;
+	}
+}
+
+.currentC{
+	min-width: 30%;
+	display: flex;
+	justify-content: flex-end;
+	li{
+		padding-left: 25px;
+		color: #b2b6b8;
+		text-transform: uppercase;
+		font-weight: 400;
+		@include fontSize(13.96px, 31.299px);
+	}
+	li:nth-child(2){
+		color: $textLtGrey;
+	}
+}
+
+.price{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 35px;
+	margin-bottom: 75px;
+}
+
+.numText{
+	margin-top: 35px;
+	margin-bottom: 30px;
+}
+
+.currentIcon{
+	color:  #14abf4;
+	font-size: 59.83px;
+	font-weight: 300;
+	line-height: 17.97px;
+}
+
+.number{
+	color:  #14abf4;
+	font-size: 59.83px;
+	font-weight: 300;
+	line-height: 17.97px;
+	
+}
+
+.cText{
+	background-color:  rgba(89, 158, 255, 0.2);
+	padding: 30px;
+	text-align: center;
+	@include fontSize(13.96px, 17.97px);
+	color: $textLtGrey;
+}
+
+
+
+.MED .cText2{
+	background-color:  rgba(20, 171, 244, 0.2);
+	padding: 30px 100px;
+	@include fontSize(13.96px, 17.97px);
+	text-align: left;
+	color: $textLtGrey;
+}
+
+.Option{
+	border-radius: 12px;
+	border: 1px solid #d8d7d7;
+	background-color:  #ffffff;
+	text-align: center;
+	width: calc((100% / 3) - 2%);
+	button{
+		border-radius: 5px;
+		border: 1px solid #d8d7d7;
+		background-color:  #ffffff;
+		padding: 10px 40px;
+		margin-bottom: 20px;
+		text-transform: uppercase;
+		color: $buttonGrey;
+		@include fontSize(12.96px, 17.97px);
+		font-weight: 300;
+	}
+	h5{
+		color: $textDkGrey;
+		@include fontSize(13.96px, 17.97px)
+		font-weight: 400;
+		text-transform: uppercase;
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+
+}
+
+.triangle{
+	border-style: solid;
+	border-width: 0 80px 80px 0;
+	border-color: transparent #14abf4 transparent transparent;
+	position: absolute;
+	z-index: 999999;
+	right: 0;
+	p{
+		color: $textWhite;
+		position: absolute;
+		@include fontSize(12.98px, 17.97px);
+		font-weight: 400;
+		text-align: center;
+		transform: matrix(0.7065,0.7073,-0.7077,0.7085,0,0);
+		text-transform: uppercase;
+		top: 8px;
+		left: 22px;
+	}
+}
+
+.MED{
+	border-color: #14abf4;
+	position: relative;
+	overflow: hidden;
+}
+
+.MED button{
+	background-color:  #14abf4;
+	color: $textWhite;
+}
+
+.numText{
+	color: $textLtGrey;
+	@include fontSize(30.91px, 17.97px);
+	font-weight: 300;
+	transform: scaleY(1.0029)
+}
+
+.currentIcon{
+	color:  #14abf4;
+	font-size: 59.83px;
+	font-weight: 300;
+	line-height: 17.97px;
+}
+
+.number{
+	color:  #14abf4;
+	font-size: 59.83px;
+	font-weight: 300;
+	line-height: 17.97px;
+	text-align: center;
+}
+
+.bottomtextPrice{
+	color: $textLtGrey;
+	@include fontSize( 13.96px, 31.299px);
+	font-weight: 400;
+	transform: scaleY(1.0029);
+	padding-top: 25px;
+	padding-bottom: 60px;
+	p{
+		margin: 0;
+	}
+	
+}
+
+// ENDS
+
+
+// TESTIMONIAL BEGINS
+
+.testimonial{
+	background: -webkit-linear-gradient(30deg, #8c82ff 9%, #2bb9ff 91%);
+	background: -moz-linear-gradient(30deg, #8c82ff 9%, #2bb9ff 91%);
+	background: -o-linear-gradient(30deg, #8c82ff 9%, #2bb9ff 91%);
+	background: -ms-linear-gradient(30deg, #8c82ff 9%, #2bb9ff 91%);
+	background: linear-gradient(60deg, #8c82ff 9%, #2bb9ff 91%);
+}
+
+.Test{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.user{
+	width: calc((100% / 3) - 2%);
+}
+
+.userP{
+	border-radius: 12px;
+	background-color:  #ffffff;
+	color: $textLtGrey;
+	@include fontSize(13px, 22.324px);
+	font-weight: 400;
+	transform: scaleX(1.0005);
+	text-align: center;
+	padding: 30px;
+	margin-bottom: 30px;
+}
+
+.testComment{
+	margin-top: 20px;
+	margin-bottom: 120px;
+}
+
+.testContent{
+	margin: 0 auto;
+	width: 55%;
+	h3{
+		text-align: center;
+		color: $textWhite;
+	}
+	p{
+		text-align: center;
+		color: $textWhite;
+		@include fontSize(14px, 25px);
+		font-weight: 400;
+	}
+}
+
+.userInfo{
+	padding-left: 20px;
+	h6{
+		color: $textWhite;
+		@include fontSize(14px, 18px);
+		font-weight: 600;
+		transform: scaleX(1.0006);
+		text-transform: uppercase;
+	}
+	p{
+		color: $textWhite;
+		@include fontSize(13px, 18px);
+		font-weight: 300;
+		transform: scaleX(1.0006);
+	}
+}
+
+
+.testComment{
+	display: flex;
+	justify-content: space-between;
+}
+
+.Details{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	h6{
+		line-height: 22px;
+	}
+	p{
+		margin: 0;
+		line-height: 22px;
+	}
+}
+
+// ENDS
+
+// MEET OUR TEAM - BEGINS
+
+
+.teamTitle{
+	margin: 0 auto;
+	width: 60%;
+	h3{
+		text-align: center;
+	}
+	p{
+		text-align: center;
+		color:  $textTeam;
+		@include fontSize(13.97px, 22.951px);
+		font-weight: 400;
+		transform: scaleY(1.0018);
+		padding-bottom: 35px;
+	}
+}
+
+.team{
+	display: flex;
+	justify-content: space-between;
+
+}
+
+.teamImg{
+	padding-top: 40px;
+}
+
+.teamInfo{
+	flex-direction: column;
+	width: calc((100% / 3) - 2%);
+	text-align: center;
+
+	border-radius: 8px;
+	position: relative;
+	border: 2px solid transparent;
+	background: #ffffff;
+	background-clip: padding-box;
+	padding: 2px;
+	position: relative;
+	&:after {
+		content: "";
+		position: absolute;
+		top: -2px; 
+		bottom: -2px;
+		left: -2px;
+		right: -2px;
+		background: linear-gradient(90deg, #8785ff 5%, #33b4ff 100%);
+		z-index: -1;
+		border-radius: 8px;
+	}
+		
+}
+
+.socialImage{
+	border: 1px solid $textWhite;
+	background-color: $textWhite;
+}
+
+.socialImage{
+	background: -webkit-linear-gradient(90deg, rgba(135, 133, 255, 0.6) 5%, rgba(51, 180, 255, 0.6) 100%), url(../assets/julia-komarova-97256.png);
+    background: -moz-linear-gradient(90deg, rgba(135, 133, 255, 0.6) 5%, rgba(51, 180, 255, 0.6) 100%) url(../assets/julia-komarova-97256.png);
+    background: -o-linear-gradient(90deg, rgba(135, 133, 255, 0.6) 5%, rgba(51, 180, 255, 0.6) 100%) url(../assets/julia-komarova-97256.png);
+    background: -ms-linear-gradient(90deg, rgba(135, 133, 255, 0.6) 5%, rgba(51, 180, 255, 0.6) 100%) url(../assets/julia-komarova-97256.png);
+    background: linear-gradient(0deg, rgba(135, 133, 255, 0.6) 5%, rgba(51, 180, 255, 0.6) 100%) url(../assets/julia-komarova-97256.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	overflow: hidden;
+	position: relative;
+}
+.middle{
+	position: absolute;
+	bottom: 0;
+	right: 20%;
+}
+
+.teamSocial{
+	margin-bottom: 50px;
+	border: 1px solid $textWhite;
+	background-color: $textWhite;
+	padding: 10px 50px;
+	border-radius: 4px;
+	i:first-child{
+		padding-right: 15px; 
+	}
+	i:nth-child(2){
+		padding-right: 15px;
+	}
+}
+
+.teamcontentHeader{
+	h5{
+		color: $textDkGrey;
+		@include fontSize(19.96px, 24px);
+		font-weight: 600;
+		text-align: center;
+		transform: scaleY(1.0021);
+		padding-top: 28px;
+	}
+	p{
+		color: $textDkGrey;
+		@include fontSize(13.98px, 24px);
+		font-weight: 400;
+		text-align: center;
+		transform: scaleY(1.0021);
+		margin: 0;
+		padding-bottom: 15px;
+	}
+}
+
+.teamContent{
+	p{
+		color:  #6d6d6d;
+		@include fontSize(12.98px, 22.474px);
+		font-weight: 400;
+		text-align: center;
+		transform: scaleY(1.0021);
+	}
+	padding-bottom: 20px;
+}
+
+// WHY CHOOSE US? BEGINS
+
+.WhyChooseIcons{
+	background:  #f8f8f8;
+	margin-top: 60px;
+}
+
+.chooseHeader{
+	margin: 0 auto;
+	width: 60%;
+	h3{
+		text-align: center;
+	}
+	p{
+		text-align: center;
+		padding-bottom: 60px;
+		color:  $textDkGrey;
+		@include fontSize(13.97px, 24.97px);
+		font-weight: 400;
+		transform: scaleY(1.0018)
+	}
+}
+
+.chooseIcons{
+	display: flex;
+}
+
+.chooseIconResponsive{
+	display: flex;
+	width: 50%;
+	justify-content: space-around;
+	text-align: center;
+}
+
+.chooseText{
+	h4{
+		color: $textAwardNumber;
+		font-size: 45px;
+		font-weight: 400;
+		transform: scaleX(1.0024)
+	}
+	p{
+		color:  $textDkGrey;
+		@include fontSize(14px, 17.97px);
+		font-weight: 400;
+		transform: scaleY(1.0001);
+		text-transform: uppercase;
+		padding: 0;
+		margin-top: 0;
+	}
+	margin-bottom: 55px;
+}
+
+.chooseImg{
+	img{
+		min-height: 48px;
+	}
+	margin-bottom: 30px;
+}
+
+
+
+
+
+// ENDS
+
+// 30 DAY TRIAL SECTION BEGINS
+
+.thirtydayTrial{
+	background-image: url(../assets/g_bgimage.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.Trial{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	p{
+		text-align: center;
+	}
+}
+
+.trialImg{
+	margin-top: 60px;
+	margin-bottom: 40px;
+}
+
+.trialText{
+	h2{
+		color:  $textWhite;
+		@include fontSize(40px, 43.081px);
+		font-weight: 400;
+		line-height: 43.081px;
+		transform: scaleX(1.0001);
+	}
+	p{
+		color:  $textWhite;
+		@include fontSize(22px, 43.081px);
+		font-weight: 300;
+		transform: scaleX(1.0001);
+		margin: 0;
+	}
+	margin-bottom: 30px;
+}
+
+.trialForm{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 75px;
+	input{
+		background: none;
+		margin-right: 35px;
+	}
+	input:first-child{
+		width: 375px;
+		border-radius: 5px;
+		border: 2px solid $textWhite;
+		padding: 15px 185px 15px 20px;
+		&::placeholder{
+			color:  #f2f3f5;
+			@include fontSize(13px, 40px);
+			font-weight: 300;
+			text-align: left;
+			transform: scaleX(1.0001);
+		}
+	}
+	input:nth-of-type(2){
+		width: 180px;
+		border-radius: 5px;
+		border: 2px solid $textWhite;
+		&::placeholder{
+			padding-left: 15px;
+			color:  #f2f3f5;
+			@include fontSize(13px, 40px);
+			font-weight: 300;
+			text-align: left;
+			transform: scaleX(1.0001);
+		}
+	}
+	input:last-child{
+		width: 190px;
+		background: $textWhite;
+		color:  #1ca8dd;
+		border-radius: 5px;
+		text-transform: uppercase;
+		@include fontSize(13px, 30px);
+		font-weight: 400;
+		line-height: 30px;
+		transform: scaleX(1.0001);
+	}
+}
+
+// TRIAL SECTION ENDS
+
+
+
+
+
+// MOBILE RESPONSIVE BEGINS 
+
+@include respond-to('small'){
+
+	.useIt{
+		margin: 0 15px;
+		padding-bottom: 50px;
+	}
+	.why{
+		width: 80%; 
+	}
+
+	.whyIcons{
+		width: 100%;
+		display: inline-block;
+	}
+
+	.iconStart{
+		width: calc(100% / 3);
+		float: left;
+		img{
+			min-height: 60px;
+		}
+	}
+
+	.iconStart:hover::after{
+		display: none;
+	}
+
+	// LAPTOP FEATURES
+	.laptopFeatures{
+		h2{
+			text-align: center;
+			padding-top: 100px;
+		}
+		p{
+			text-align: center;
+		}
+		button{
+			margin-bottom: 80px;
+		}
+
+	}
+
+	.features{
+		margin: 0 15px;
+	}
+
+	.Lefttext{
+		width: 100%;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	.lapRight{
+		display: none;
+	}
+
+	// PRICING BEGINS
+
+	.pricing{
+		margin: 0 15px;
+	}
+
+	.priceTitle{
+		width: 90%;
+	}
+
+	.currentC{
+		justify-content: center;
+	}
+
+	.price{
+		flex-direction: column;
+		width: 100%;
+	}
+
+	.Option{
+		width: 100%;
+		margin-bottom: 30px;
+	}
+
+	.cText2{
+		p{
+			text-align: center;
+		}
+	}
+
+	// TESTIMONIALS
+
+	.testContent{
+		width: 85%;
+		margin-bottom: 20px;
+		p{
+			width: 100%;
+		}
+	}
+
+	.testComment{
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 20px;
+	}
+
+	.user{
+		width: 80%;
+		margin: 0 auto;
+	}
+
+	.userP{
+		margin:10px;
+	}
+
+	.Details{
+		justify-content: center;
+		margin-bottom: 50px;
+	}
+
+	// MEET OUR TEAM BEGINS
+
+
+	.teamTitle{
+		width: 90%;
+	}
+
+	.team{
+		flex-direction: column;
+	}
+
+	.socialImage{
+		min-height: 70vh;
+	}
+
+	.teamInfo{
+		width: 80%;
+		margin: 0 auto;
+		margin-bottom: 30px;
+	}
+
+	.teamSocial{
+		font-size: 20px;
+	}
+
+	// WHY CHOOSE USE BEGINS
+
+	.chooseHeader{
+		width: 85%;
+	}
+
+	.cIcon{
+		width: 100%;
+	}
+
+	.chooseImg{
+		margin: 10px;
+	}
+
+	.chooseIconResponsive{
+		display: block;
+		text-align: center;
+	}
+
+
+	// TRY 30 DAY TRIAL BEGINS
+
+	.Trial{
+		width: 100%;
+	}
+
+	.trialText{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		h2{
+			text-align: center;
+			font-size: 30px;
+		}
+		p{
+			font-size: 20px;
+		}
+	}
+
+	.trialForm{
+	flex-direction: column;
+	align-items: center;
+	input{
+		margin:0;
+		padding: 15px;
+		}
+		input:first-child{
+			width: 300px;
+			padding: 20px;
+			margin-bottom: 5px;
+		}
+		input:nth-child(2){
+			width: 300px;
+			margin-bottom: 15px;
+		}
+		input:last-child[value]{
+			font-size: 20px;
+		}
+	}
+
+}
+
+// MEDIA @ 768px BEGINS
+@include respond-to('medium'){
+	.whyIcons{
+		justify-content: space-around;
+	}
+
+
+	// LAPTOP/FEATURES
+
+	.laptopFeatures{
+		h2{
+			text-align: center;
+			padding-top: 100px;
+			font-size: 35px;
+		}
+		p{
+			text-align: center;
+		}
+		button{
+			margin-bottom: 80px;
+		}
+
+	}
+
+	.features{
+		margin: 0 15px;
+	}
+
+	.Lefttext{
+		width: 100%;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	.lapRight{
+		display: none;
+	}
+
+	// PRICING BEGINS
+
+	.pricing{
+		margin: 0 15px;
+	}
+
+	.priceTitle{
+		width: 90%;
+	}
+
+	.currentC{
+		justify-content: center;
+	}
+
+	.price{
+		flex-direction: column;
+		width: 100%;
+	}
+
+	.Option{
+		width: 100%;
+		margin-bottom: 30px;
+	}
+
+	.cText2{
+		p{
+			text-align: center;
+		}
+	}
+
+	// TESTIMONIALS
+
+	.testContent{
+		width: 85%;
+		margin-bottom: 20px;
+		p{
+			width: 100%;
+		}
+	}
+
+	.testComment{
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 20px;
+	}
+
+	.user{
+		width: 80%;
+		margin: 0 auto;
+	}
+
+	.userP{
+		margin:10px;
+	}
+
+	.Details{
+		justify-content: center;
+		margin-bottom: 50px;
+	}
+
+	// MEET OUR TEAM BEGINS
+
+
+	.teamTitle{
+		width: 90%;
+	}
+
+	.team{
+		flex-direction: column;
+	}
+
+	.socialImage{
+		min-height: 70vh;
+	}
+
+	.teamInfo{
+		width: 80%;
+		margin: 0 auto;
+		margin-bottom: 30px;
+	}
+
+	.teamSocial{
+		font-size: 20px;
+	}
+
+	// WHY CHOOSE USE BEGINS
+
+	.chooseHeader{
+		width: 85%;
+	}
+
+	.cIcon{
+		width: 100%;
+	}
+
+	.chooseImg{
+		margin: 10px;
+	}
+
+	.chooseIconResponsive{
+		display: block;
+		text-align: center;
+	}
+
+
+	// TRY 30 DAY TRIAL BEGINS
+
+	.Trial{
+		width: 100%;
+	}
+
+	.trialText{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		h2{
+			text-align: center;
+			font-size: 30px;
+		}
+		p{
+			font-size: 20px;
+		}
+	}
+
+	.trialForm{
+	flex-direction: column;
+	align-items: center;
+	input{
+		margin:0;
+		padding: 15px;
+		}
+		input:first-child{
+			width: 300px;
+			padding: 20px;
+			margin-bottom: 5px;
+		}
+		input:nth-child(2){
+			width: 300px;
+			margin-bottom: 15px;
+		}
+		input:last-child[value]{
+			font-size: 20px;
+		}
+	}
+
+
+}
+
+@include respond-to('large'){
+	.whyIcons{
+		justify-content: space-around;
+	}
+
+	// LAPTOP / FEATURES
+	.laptopFeatures{
+		h2{
+			text-align: center;
+			padding-top: 100px;
+			font-size: 50px;
+		}
+		p{
+			text-align: center;
+			margin-right: 0;
+		}
+		button{
+			margin-bottom: 80px;
+		}
+
+	}
+
+
+		.features{
+			margin: 0 15px;
+		}
+
+		.Lefttext{
+			width: 100%;
+			margin: 0 auto;
+			text-align: center;
+		}
+
+		.lapRight{
+			display: none;
+		}
+
+	// PRICING BEGINS
+
+	.pricing{
+		margin: 0 15px;
+	}
+
+	.priceTitle{
+		width: 90%;
+	}
+
+	.currentC{
+		justify-content: center;
+	}
+
+	.price{
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+	}
+
+	.Option{
+		width: 100%;
+		margin-bottom: 30px;
+	}
+
+	.cText2{
+		p{
+			text-align: center;
+		}
+	}
+		
+
+	// 30 DAY TRIAL SECTION
+
+	.trialForm{
+	input{
+		margin:0;
+		padding: 15px;
+		margin-left: 10px;
+		}
+		input:first-child{
+			width: 300px;
+			padding: 20px;
+			margin-bottom: 5px;
+		}
+		input:nth-child(2){
+			width: 200px;
+			margin-bottom: 4px;
+		}
+		input:last-child[value]{
+			font-size: 15px;
+			border: none;
+			margin-bottom: 3px;
+		}
+	}
+
+}
+
+@include respond-to('xlarge'){
+	.whyIcons{
+		justify-content: space-around;
+	}
+
+	// LAPTOP / FEATURES
+	.laptopFeatures{
+		h2{
+			text-align: center;
+			padding-top: 100px;
+			font-size: 50px;
+		}
+		p{
+			text-align: center;
+			margin-right: 0;
+		}
+		button{
+			margin-bottom: 80px;
+		}
+
+	}
+
+
+		.features{
+			margin: 0 15px;
+		}
+
+		.Lefttext{
+			width: 100%;
+			margin: 0 auto;
+			text-align: center;
+		}
+
+		.lapRight{
+			display: none;
+		}
+
+
+}
+
+
+

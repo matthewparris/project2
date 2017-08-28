@@ -1,0 +1,16 @@
+$textBlue: #23b7ef ;
+$textWhite: #ffffff ;
+$textLtGrey: #6d6d6d ;
+$textDkGrey: #4f4f4f ;
+$buttonGrey: #949494 ;
+$textTeam: #201f1f ;
+$socialIcon: #000000 ;
+$textAwardNumber: #2d2d2d;
+$textBottomFoot: #afafaf;
+
+
+@mixin fontSize($sizeFont, $lineHeight){
+	font-size: $sizeFont;
+	line-height: $lineHeight;
+}
+

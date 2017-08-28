@@ -1,0 +1,170 @@
+footer{
+	background: #f2f3f5;
+}
+
+.CompanyInfo{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 10px;
+	border-bottom: 1px solid #cecece;
+	padding-bottom: 40px;
+}
+
+.aboutCompany{
+	p{
+		width: 80%;
+	}
+}
+
+.contact{
+	width: calc(100% / 3);
+	h5{
+		padding-top: 50px;
+		padding-bottom: 35px;
+		color: $textDkGrey;
+		@include fontSize(14px, 22px);
+		font-weight: 400;
+		text-align: left;
+		transform: scaleX(1.0001);
+		text-transform: uppercase;
+	}
+	p, li a{
+		margin-top: 0;
+		color:  $textLtGrey;
+		@include fontSize(13px, 27.08px);
+		font-weight: 300;
+		text-align: left;
+		transform: scaleX(1.0001);
+	}
+}
+
+.location{
+	position: relative;
+	padding-left: 30px;
+	&::before{
+		content:"\f041";
+		font-family: FontAwesome;
+		display: block;
+		position: absolute;
+		left: 0;
+
+	}
+}
+
+.phonenumber{
+	position: relative;
+	padding-left: 30px;
+	&::before{
+		content:"\f095";
+		font-family: FontAwesome;
+		display: block;
+		position: absolute;
+		left: 0;
+		
+	}
+}
+
+.emailadd{
+	position: relative;
+	padding-left: 30px;
+	&::before{
+		content:"\f0e0";
+		font-family: FontAwesome;
+		display: block;
+		position: absolute;
+		left: 0;
+		
+	}
+}
+
+.social{
+	display: flex;
+}
+
+.Socialicons{
+	border-radius: 50%;
+	width: 24px;
+	height: 24px;
+	color: $textWhite;
+	@include fontSize(12px, 24px);
+	text-align: center;
+}
+
+.FB{
+	background-color:  #225b99;
+	margin-right: 10px;
+}
+
+.twitter{
+	background-color:  #00adf2;
+	margin-right: 10px;
+}
+
+.gplus{
+	background-color:  #dc4d2d;
+}
+
+.copyright{
+	margin: 0;
+	p{
+		margin: 0;
+		font-family: 'Ubuntu';
+		color: #afafaf;
+		font-size: 12px;
+		font-weight: 300;
+		line-height: 22px;
+		text-align: center;
+		transform: scaleX(1.0001);
+		padding-bottom: 10px;
+	}
+}
+
+// RESPONSIVE BEGINS
+
+
+@include respond-to('small'){
+	.CompanyInfo{
+	display: block;
+	width: 100%;
+	}
+
+	.contact{
+		width: 100%;
+		h5{
+			text-align: center;
+			padding-top: 80px;
+			font-size: 30px;
+		}
+
+		p{
+			margin: 0;
+			width: 95%;
+			text-align: center;
+		}
+	}
+
+		.social{
+			justify-content: center;
+			padding-top: 30px;
+		}
+		.company{
+			width: 100%;
+			ul{
+				display: flex;
+				justify-content: space-around;
+			}
+		}
+
+		.getintouch{
+			width: 90%;
+			padding: 0;
+			margin-left: 30px;
+		}
+
+}
+
+@include respond-to('medium'){
+	.CompanyInfo{
+		margin: 0 15px;
+	}
+}

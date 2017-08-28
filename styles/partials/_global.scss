@@ -1,0 +1,70 @@
+html{
+	font-size: 62.5%;
+}
+
+body{
+	font-family: 'Open Sans', sans-serif;
+	flex-wrap: wrap;
+
+}
+
+h1, h2, h3, h4, h5, h6{
+	margin: 0;
+}
+
+h3{
+	color:  #23b7ef;
+	font-size: 31px;
+	font-weight: 400;
+	text-align: center;
+	transform: scaleX(1.0001);
+	padding-top: 60px;
+	padding-bottom: 15px;
+}
+
+
+
+ul{
+	margin: 0;
+	padding: 0;
+}
+
+li{
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+}
+
+img{
+	max-width: 100%;
+}
+
+
+button{
+	border: 1px solid $textWhite;
+	border-radius: 5px;
+}
+
+.wrapper{
+	max-width: 940px;
+	margin: 0 auto;
+	@include respond-to('medium'){
+		max-width: 700px;
+	}
+	@include respond-to('large'){
+		max-width: 800px;
+	}
+	@include respond-to('xlarge'){
+		max-width: 940px;
+	}
+}
+
+
+
+
+
+
+
+
